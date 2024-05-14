@@ -1,7 +1,6 @@
-import './App.css';
 import Navbar from './Navbar.js';
 import Hero from './Hero.js';
-
+import About from './About.js';
 
 function App() {
 
@@ -9,6 +8,7 @@ function App() {
     <div className="bg-dark h-auto">
       <Navbar />
       <Hero />
+      <About />
     </div>
   );
 }
