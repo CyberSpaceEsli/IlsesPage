@@ -6,7 +6,7 @@ import Hero from './Hero.js';
 function App() {
 
   return (
-    <div className="bg-dark vh-100">
+    <div className="bg-dark h-auto">
       <Navbar />
       <Hero />
     </div>
