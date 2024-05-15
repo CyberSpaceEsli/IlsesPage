@@ -2,3 +2,49 @@
     height: 3rem;
     width: 3rem;
 }
+
+.wrapper {
+  position: relative;
+  height: 50px !important; /* Adjust the height as needed */
+  overflow: hidden; /* Hide overflowing content */
+  line-height: 50px; /* Set line-height equal to container height */
+}
+
+.wrapper span {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  animation: slideIn 12s linear infinite; /* Adjust the duration as needed */
+}
+
+
+
+@keyframes slideIn {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(-100%); /* Start position, text above the container */
+  }
+  12% {
+    opacity: 1; /* Fade in the text */
+    transform: translateY(-100%); /* Slide down to reveal the text */
+  }
+  85% {
+    opacity: 1; /* Keep opacity 1 when fully visible */
+    transform: translateY(0); /* Keep text visible */
+  }
+  100% {
+    opacity: 1; /* Fade out the text */
+    transform: translateY(100%); /* Slide out of view */
+  }
+}
+
+
+.wrapper span:nth-child(2) {
+    animation-delay: 8s;
+}
+
+.wrapper span:nth-child(3) {
+    animation-delay: 16s;
+}

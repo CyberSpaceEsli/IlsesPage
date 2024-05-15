@@ -1,4 +1,5 @@
 import frauImage from './assets/frau.png';
+import './App.css';
 
 function Hero() {
 
@@ -6,7 +7,13 @@ function Hero() {
     <div className="container-xl">
         <div className="row flex-lg-row align-items-center g-5 py-5">
         <div className="col-lg-6">
-            <h1 className="display-5 fw-bold lh-1 mb-3 text-white">Hoi, <br/>my name is
+            <h1 className="display-5 fw-bold lh-1 mb-3 text-white">
+            <div className="wrapper"> 
+              <span className="animated-text text-primary">Hi, </span> 
+              <span className="animated-text text-primary">Hoi, </span> 
+              <span className="animated-text text-primary">Hallo, </span> 
+            </div> 
+            my name is
             <span className="text-primary"> Ilse Löhr</span><br/>
             I‘m a web, usability and photography enthusiast.</h1>
             <p className="lead text-white">Quickly design and customize responsive mobile-first sites 
